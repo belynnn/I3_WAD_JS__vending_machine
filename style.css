@@ -1,0 +1,146 @@
+body{
+	background-color: rgb(0, 0, 0);
+	color: rgb(173, 255, 47);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+}
+
+h1, h2, h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+h1{
+    font-size: 1.2em;
+}
+h2{
+    font-size: 1em;
+}
+h3{
+    font-size: .8em;
+}
+
+main {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.vending-machine{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.product-section {
+	background-color: rgb(29, 46, 26);
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: .2em;
+    padding: .5em .25em;
+}
+
+.product-line-section {
+    display: grid;
+    gap: .2em;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product{
+    text-align: center;
+}
+
+.stock {
+    display: none;
+}
+
+img {
+	height: 40px;
+	width: 40px;
+}
+
+.product>p:last-of-type {
+	color: rgb(173, 255, 47);
+	background-color: rgb(0, 0, 0);
+	border-radius: 5px;
+	text-align: center;
+}
+
+.shopping-basket {
+	align-items: center;
+	background-color: rgb(18, 29, 16);
+	display: flex;
+	justify-content: center;
+    padding: .5em;
+}
+
+img[src=""] {
+	visibility: hidden;
+}
+
+.shade {
+	background: radial-gradient(#4a4f4a 10%, rgb(18, 29, 16) 50%);
+}
+
+.commands-section {
+	align-items: center;
+	background-color: rgb(43, 65, 39);
+	display: flex;
+	flex-direction: column;
+}
+
+.commands-section>p:first-of-type {
+	background-color: rgb(0, 0, 0);
+	color: rgb(173, 255, 47);
+	height: 50px;
+    font-size: .7em;
+    padding: 1em .25em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80px;
+}
+
+.commands-section>p:last-of-type {
+	align-items: center;
+	background-color: rgb(0, 0, 0);
+	color: rgb(173, 255, 47);
+	display: flex;
+	height: 25px;
+	justify-content: center;
+    width: 50px;
+}
+
+.keypad{
+    display: grid;
+    gap: 2px;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.btn-line-keypad{
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btns-line-reset-confirm {
+    margin: 1em;
+    text-align: center;
+}
+
+.keypad button, .btns-line-reset-confirm button{
+    color: rgb(113, 168, 113);
+    background-color: rgb(9, 14, 8);
+    border-color: rgba(57, 66, 57, 0.855);
+    border-radius: 5px;
+    font-size: .7em;
+}
+
+footer{
+    text-align: center;
+}
+
+a,  a:visited{
+    color: rgb(220, 255, 168);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(173, 255, 47);
+    text-decoration: underline;
+}

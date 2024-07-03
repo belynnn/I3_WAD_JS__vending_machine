@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+
+<head>
+    <meta charset="UTF-8" /> <!-- Définition de l'encodage des caractères -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Configuration de la vue adaptative pour les appareils -->
+    <title>Vending Machine</title> <!-- Titre de la page -->
+    <link rel="stylesheet" href="./style.css" /> <!-- Liaison vers la feuille de style CSS -->
+    <script src="./script.js" defer></script> <!-- Liaison vers le script JavaScript, chargé après le rendu de la page -->
+</head>
+
+<body>
+    <header>
+        <h1>Vending Machine</h1> <!-- Titre principal de l'en-tête -->
+    </header>
+
+    <main>
+        <section class="vending-machine">
+            <div class="stock-section">
+                <!-- Section contenant les produits -->
+                <div class="product-section">
+                    <!-- Section des produits, divisée en lignes -->
+                    <div class="product-line-section">
+                        <!-- Première ligne de produits -->
+                        <div class="product">
+                            <!-- Produit individuel -->
+                            <p class="stock">3</p> <!-- Quantité en stock -->
+                            <img src="./images/coca.png" alt="Image d'une canette de Coca-Cola" /> <!-- Image du produit avec description alternative -->
+                            <p>1</p> <!-- Numéro de produit -->
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">6</p>
+                            <img src="./images/light.png" alt="Image d'une canette de Coca-Cola Light" />
+                            <p>2</p>
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">2</p>
+                            <img src="./images/pepsi.png" alt="Image d'une canette de Pepsi" />
+                            <p>3</p>
+                        </div>
+                    </div>
+
+                    <div class="product-line-section">
+                        <!-- Deuxième ligne de produits -->
+                        <div class="product">
+                            <p class="stock">3</p>
+                            <img src="./images/max.png" alt="Image d'une canette de Pepsi Max" />
+                            <p>4</p>
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">1</p>
+                            <img src="./images/fanta.png" alt="Image d'une canette de Fanta" />
+                            <p>5</p>
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">5</p>
+                            <img src="./images/sprite.png" alt="Image d'une canette de Sprite" />
+                            <p>6</p>
+                        </div>
+                    </div>
+
+                    <div class="product-line-section">
+                        <!-- Troisième ligne de produits -->
+                        <div class="product">
+                            <p class="stock">0</p> <!-- Produit épuisé -->
+                            <img src="" alt="Produit épuisé, pas d'image" /> <!-- Image vide avec description alternative -->
+                            <p>7</p>
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">0</p>
+                            <img src="" alt="Produit épuisé, pas d'image" />
+                            <p>8</p>
+                        </div>
+
+                        <div class="product">
+                            <p class="stock">0</p>
+                            <img src="" alt="Produit épuisé, pas d'image" />
+                            <p>9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shopping-basket">
+                    <!-- Panier d'achat -->
+                    <img id="drink_shopping_basket" src="" alt="" /> <!-- Image du produit sélectionné dans le panier -->
+                </div>
+            </div>
+
+            <section class="commands-section">
+                <!-- Section des commandes -->
+                <p>❓<br>Entrez votre choix</p> <!-- Message initial de la section des commandes -->
+
+                <p id="display_user_choice">...</p> <!-- Affichage du choix utilisateur -->
+
+                <div class="keypad">
+                    <!-- Clavier numérique -->
+                    <div class="btn-line-keypad">
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                    </div>
+
+                    <div class="btn-line-keypad">
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                    </div>
+
+                    <div class="btn-line-keypad">
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                    </div>
+                </div>
+
+                <div class="btns-line-reset-confirm">
+                    <!-- Boutons de réinitialisation et de confirmation -->
+                    <button id="btn_reset">Reset</button>
+                    <button id="btn_confirm">Confirm</button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Pied de page -->
+        <h2>Student Web Application Developer at <a href="https://interface3.be/fr" target="_blank" rel="noopener noreferrer">Interface3</a></h2>
+        <h3></h3>
+        <p>&copy; Made with 💚 by Deborah Clerckx</p> <!-- Information de crédit -->
+        <p></p>
+        <p>2024 - 2025</p> <!-- Années de réalisation du projet -->
+    </footer>
+</body>
+
+</html>

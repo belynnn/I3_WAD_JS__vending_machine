@@ -1,0 +1,172 @@
+/* Style général du corps de la page */
+body {
+	background-color: rgb(0, 0, 0); /* Couleur de fond noir */
+	color: rgb(173, 255, 47); /* Couleur du texte */
+	font-family: Arial, Helvetica, sans-serif; /* Police de caractère */
+	margin: auto; /* Centrage horizontal */
+}
+
+/* Styles des titres h1, h2, h3 */
+h1, h2, h3 {
+	text-transform: uppercase; /* Texte en majuscules */
+	text-align: center; /* Centrage du texte */
+}
+h1 {
+	font-size: 1.2em; /* Taille de police pour h1 */
+}
+h2 {
+	font-size: 1em; /* Taille de police pour h2 */
+}
+h3 {
+	font-size: .8em; /* Taille de police pour h3 */
+}
+
+/* Style de la section principale */
+main {
+	font-family: "Courier New", Courier, monospace; /* Police à chasse fixe */
+}
+
+/* Style de la section de la machine distributrice */
+.vending-machine {
+	display: flex; /* Conteneur flex */
+	justify-content: center; /* Centrage horizontal des enfants */
+	margin: auto; /* Centrage horizontal */
+}
+
+/* Style de la section des produits */
+.product-section {
+	background-color: rgb(29, 46, 26); /* Couleur de fond verte foncée */
+	display: grid; /* Conteneur en grille */
+	grid-template-rows: repeat(3, 1fr); /* 3 lignes égales */
+	gap: .2em; /* Espacement entre les éléments */
+	padding: .5em .25em; /* Espacement intérieur */
+}
+
+/* Style de la section des lignes de produits */
+.product-line-section {
+	display: grid; /* Conteneur en grille */
+	gap: .2em; /* Espacement entre les éléments */
+	grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+}
+
+/* Style des produits individuels */
+.product {
+	text-align: center; /* Centrage du texte */
+}
+
+/* Style des éléments de stock (cachés par défaut) */
+.stock {
+	display: none; /* Masqué par défaut */
+}
+
+/* Style des images */
+img {
+	height: 40px; /* Hauteur fixe */
+	width: 40px; /* Largeur fixe */
+}
+
+/* Style du paragraphe après les produits */
+.product>p:last-of-type {
+	color: rgb(173, 255, 47); /* Couleur du texte verte claire */
+	background-color: rgb(0, 0, 0); /* Fond noir */
+	border-radius: 5px; /* Coins arrondis */
+	text-align: center; /* Centrage du texte */
+}
+
+/* Style du panier d'achat */
+.shopping-basket {
+	align-items: center; /* Centrage vertical */
+	background-color: rgb(18, 29, 16); /* Fond vert foncé */
+	display: flex; /* Conteneur flex */
+	justify-content: center; /* Centrage horizontal */
+	padding: .5em; /* Espacement intérieur */
+}
+
+/* Style des images avec src vide (visibilité cachée) */
+img[src=""] {
+	visibility: hidden; /* Image invisible */
+}
+
+/* Style de l'ombre portée */
+.shade {
+	background: radial-gradient(#4a4f4a 10%, rgb(18, 29, 16) 50%); /* Dégradé radial */
+}
+
+/* Style de la section des commandes */
+.commands-section {
+	align-items: center; /* Centrage vertical */
+	background-color: rgb(43, 65, 39); /* Fond vert foncé */
+	display: flex; /* Conteneur flex */
+	flex-direction: column; /* Alignement en colonne */
+}
+
+/* Style du premier paragraphe de la section des commandes */
+.commands-section>p:first-of-type {
+	background-color: rgb(0, 0, 0); /* Fond noir */
+	color: rgb(173, 255, 47); /* Couleur du texte verte claire */
+	height: 50px; /* Hauteur fixe */
+	font-size: .7em; /* Taille de police */
+	padding: 1em .25em; /* Espacement intérieur */
+	text-align: center; /* Centrage du texte */
+	text-transform: uppercase; /* Texte en majuscules */
+	width: 80px; /* Largeur fixe */
+}
+
+/* Style du dernier paragraphe de la section des commandes */
+.commands-section>p:last-of-type {
+	align-items: center; /* Centrage vertical */
+	background-color: rgb(0, 0, 0); /* Fond noir */
+	color: rgb(173, 255, 47); /* Couleur du texte verte claire */
+	display: flex; /* Conteneur flex */
+	height: 25px; /* Hauteur fixe */
+	justify-content: center; /* Centrage horizontal */
+	width: 50px; /* Largeur fixe */
+}
+
+/* Style de la section du clavier */
+.keypad {
+	display: grid; /* Conteneur en grille */
+	gap: 2px; /* Espacement entre les éléments */
+	grid-template-rows: repeat(3, 1fr); /* 3 lignes égales */
+}
+
+/* Style des lignes de boutons du clavier */
+.btn-line-keypad {
+	display: grid; /* Conteneur en grille */
+	gap: 3px; /* Espacement entre les éléments */
+	grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
+}
+
+/* Style des boutons de réinitialisation et de confirmation */
+.btns-line-reset-confirm {
+	margin: 1em; /* Marge extérieure */
+	text-align: center; /* Centrage du texte */
+}
+
+/* Style des boutons du clavier et des boutons de réinitialisation et de confirmation */
+.keypad button,
+.btns-line-reset-confirm button {
+	color: rgb(113, 168, 113); /* Couleur du texte */
+	background-color: rgb(9, 14, 8); /* Fond foncé */
+	border-color: rgba(57, 66, 57, 0.855); /* Couleur de la bordure */
+	border-radius: 5px; /* Coins arrondis */
+	font-size: .7em; /* Taille de police */
+}
+
+/* Style du pied de page */
+footer {
+	text-align: center; /* Centrage du texte */
+}
+
+/* Style des liens et des liens visités */
+a,
+a:visited {
+	color: rgb(220, 255, 168); /* Couleur du texte jaune clair */
+	text-decoration: none; /* Pas de soulignement */
+}
+
+/* Style du survol des liens */
+a:hover {
+	color: rgb(173, 255, 47); /* Couleur du texte verte claire */
+	text-decoration: underline; /* Soulignement au survol */
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="fr-be">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vending Machine</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Vending Machine</h1>
+        </header>
+
+        <main>
+            <section class="vending-machine">
+                <div class="stock-section">
+                    <div class="product-section">
+                        <div class="product-line-section">
+                            <div class="product">
+                                <p class="stock">3</p>
+                                <img src="./images/coca.png" alt="Image d'une canette de Coca-Cola" />
+                                <p>1</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">6</p>
+                                <img src="./images/light.png" alt="Image d'une canette de Coca-Cola Light" />
+                                <p>2</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">2</p>
+                                <img src="./images/pepsi.png" alt="Image d'une canette de Pepsi" />
+                                <p>3</p>
+                            </div>
+                        </div>
+
+                        <div class="product-line-section">
+                            <div class="product">
+                                <p class="stock">3</p>
+                                <img src="./images/max.png" alt="Image d'une canette de Pepsi Max" />
+                                <p>4</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">1</p>
+                                <img src="./images/fanta.png" alt="Image d'une canette de Fanta" />
+                                <p>5</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">5</p>
+                                <img src="./images/sprite.png" alt="Image d'une canette de Sprite" />
+                                <p>6</p>
+                            </div>
+                        </div>
+
+                        <div class="product-line-section">
+                            <div class="product">
+                                <p class="stock">0</p>
+                                <img src="" alt="Produit épuisé, pas d'image" />
+                                <p>7</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">0</p>
+                                <img src="" alt="Produit épuisé, pas d'image" />
+                                <p>8</p>
+                            </div>
+
+                            <div class="product">
+                                <p class="stock">0</p>
+                                <img src="" alt="Produit épuisé, pas d'image" />
+                                <p>9</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shopping-basket">
+                        <img id="drink_shopping_basket" src="" alt="" />
+                    </div>
+                </div>
+
+                <section class="commands-section">
+                    <p>❓<br>Entrez votre choix</p>
+
+                    <p id="display_user_choice">...</p>
+
+                    <div class="keypad">
+                        <div class="btn-line-keypad">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+
+                        <div class="btn-line-keypad">
+                            <button>4</button>
+                            <button>5</button>
+                            <button>6</button>
+                        </div>
+
+                        <div class="btn-line-keypad">
+                            <button>7</button>
+                            <button>8</button>
+                            <button>9</button>
+                        </div>
+                    </div>
+
+                    <div class="btns-line-reset-confirm">
+                        <button id="btn_reset">Reset</button>
+                        <button id="btn_confirm">Confirm</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <h2>Student Web Application Developer at <a href="https://interface3.be/fr" target="_blank" rel="noopener noreferrer">Interface3</a></h2>
+            <h3></h3>
+            <p>&copy; Made with 💚 by Deborah Clerckx</p>
+            <p></p>
+            <p>2024 - 2025</p>
+        </footer>
+    </body>
+
+</html>
